@@ -4,14 +4,10 @@
 
 ## About this repository.
 
----
-
 Basic starter template that i use to quickly start developing static sites with custom css and vanilla javascript.
 Feel free to fork, use, improve and share.
 
 ## Installation
-
----
 
 You can easily try this template by following these steps.
 
