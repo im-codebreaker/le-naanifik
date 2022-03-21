@@ -2,6 +2,9 @@
 @use './assets/styles/colors';
 @use './assets/styles/functions';
 
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
 .header,
 .footer {
   height: 5vh;
