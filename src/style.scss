@@ -6,17 +6,6 @@
 body {
   font-family: contentRegular, sans-serif;
 }
-.header,
-.footer {
-  height: 3vh;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: functions.space(4);
-  height: 80px;
-}
 .main {
   display: flex;
   flex-direction: column;
@@ -33,6 +22,60 @@ body {
   color: colors.$dark;
   text-align: center;
 }
+.navbar{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: functions.space(3);
+}
+.navbar-burger{
+  cursor: pointer;
+  background:none;
+  border:none;
+
+  &.open~.navbar-menu {
+    transform: translate3d(0, 80px, 0)
+  }
+}
+.navbar-menu{
+  position: absolute;
+  top:0;
+  left: 0;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  transform:translate3d(0, -400px, 0);
+  transition: all 1s ease-in;  
+  .navbar-menu_item{
+    padding-bottom: 1rem;
+  }
+}
+.icon-bar{
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: colors.$dark;
+  transition: all 1s;
+
+  &:nth-of-type(2){
+    margin: 5px 0;
+  }
+}
+.open .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,7px,0) rotate(135deg) ;
+}
+.open .icon-bar:nth-of-type(2){
+  transform: scale(0);
+}
+.open .icon-bar:nth-of-type(3) {
+  transform:  translate3d(0, -7px, 0) rotate(-135deg) ;
+}
+.menu_item-link{
+  font-family: contentRegular, sans-serif;
+  color: colors.$dark;
+}
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -47,6 +90,40 @@ body {
   .container {
     max-width: 1024px;
   }
+
+  .navbar-menu_item{
+    margin-right: 160px;
+  }
+  .navbar-burger{
+    display:none;
+  }
+  .navbar-menu{
+    position: static;
+    display:flex;
+    flex-direction: row;
+    transform: translate3d(0,0,0);
+    transition: none;
+    width: auto;
+    .navbar-menu_item {
+      padding-bottom: 0;
+    }
+  }
+  .menu_item-link{
+    &::after {
+      content: '';
+      display: block;
+      background: colors.$secondary;
+      height: 4px;
+      width: 0;
+      border-radius: 4px;
+      transform-origin: 50% 0;
+      transition: all 400ms cubic-bezier(.55, .055, .675, .19);
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  
 }
 @media (min-width: 1280px) {
   .container {
