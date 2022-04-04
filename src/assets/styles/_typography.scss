@@ -1,0 +1,45 @@
+@font-face {
+  font-family: titleRegular;
+  src:local('Advent Pro Regular'),local('AdventPro-Regular');
+  src: url(/fonts/AdventPro-Regular.woff2) format('woff2'),
+  url(/fonts/AdventPro-Regular.eot?#iefix) format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: titleBold;
+  src:local('Advent Pro Bold'),local('AdventPro-Bold');
+  src: url(/fonts/AdventPro-Bold.woff2) format('woff2'),
+  url(/fonts/AdventPro-Bold.eot?#iefix) format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: contentLightItalic;
+  src:local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic');
+  src: url(/fonts/Montserrat-ExtraLightItalic.woff2) format('woff2'),
+  url(/fonts/Montserrat-ExtraLightItalic.eot?#iefix) format('embedded-opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: contentRegular;
+  src: local('Montserrat Regular'), local('Montserrat-Regular');
+  src: url(/fonts/Montserrat-Regular.woff2) format('woff2'),
+  url(/fonts/Montserrat-Regular.eot?#iefix) format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: contentSemiBold;
+  src: local('Montserrat SemiBold'),local('Montserrat-SemiBold');
+  src: url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
+  url(/fonts/Montserrat-SemiBold.eot?iefix) format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

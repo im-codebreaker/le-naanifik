@@ -1,9 +1,10 @@
 @use './assets/styles/reset';
 @use './assets/styles/colors';
 @use './assets/styles/functions';
+@use './assets/styles/typography';
 
 body {
-  font-family: sans-serif;
+  font-family: contentRegular, sans-serif;
 }
 .header,
 .footer {
@@ -15,9 +16,6 @@ body {
   align-items: center;
   padding-left: functions.space(4);
   height: 80px;
-}
-.header-title {
-  color: colors.$dark;
 }
 .main {
   display: flex;
