@@ -26,7 +26,8 @@ h6{
   width: 100%;
   margin-inline: auto;
 }
-.footer {
+footer {
+  margin-top: 800px;
   color: colors.$dark;
   text-align: center;
 }
@@ -150,7 +151,36 @@ h6{
 
   }
 }
+// -------- Section Menus -------- //
+.section-menus_menu{
+  margin:functions.space(10) 0;
+}
+.section-menus_introduction{
+  max-width: 660px;
+}
+.menu_list-item{
+  display: flex;
+  flex-direction: column-reverse;
+ }
+.list_item-description{
+  margin:functions.space(5) 0;
+}
+.menus_introduction-link{
+  display: block;
+  text-align: right;
+  margin-top: functions.space(3);
+  font-family: contentLightItalic;
+  color: colors.$secondary;
+}
+.list_item-imagebox{
+  border:4px solid colors.$grey;
+  border-radius: 8px;
 
+  .item_imagebox-img{
+    padding: 4px;
+    border-radius: 8px;
+  }
+}
 // -------- Media Queries -------- //
 @media (min-width: 640px) {
   .container {
