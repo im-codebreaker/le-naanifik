@@ -3,22 +3,21 @@
 @use './assets/styles/functions';
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: sans-serif;
 }
 .header,
 .footer {
-  height: 5vh;
+  height: 3vh;
 }
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: colors.$primary;
   padding-left: functions.space(4);
   height: 80px;
 }
 .header-title {
-  color: colors.$light3;
+  color: colors.$dark;
 }
 .main {
   display: flex;
@@ -33,7 +32,7 @@ body {
   margin-inline: auto;
 }
 .footer {
-  color: colors.$dark1;
+  color: colors.$dark;
   text-align: center;
 }
 @media (min-width: 640px) {
