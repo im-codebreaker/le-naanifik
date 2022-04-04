@@ -3,16 +3,24 @@
 @use './assets/styles/functions';
 @use './assets/styles/typography';
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: contentRegular, sans-serif;
+  color: colors.$dark;
 }
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: colors.$primary;
-  height: 90vh;
+main {
+ padding: 0 5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: contentSemiBold;
+  padding-bottom: 1rem;
 }
 .container {
   width: 100%;
@@ -90,7 +98,7 @@ body {
   content:'';
   position:absolute;
   bottom: -160px;
-  right: 24px;
+  right: 40px;
   width: 180px;
   height: 180px;
   background:transparent url(./assets/images/naanifik_circle.svg) center center no-repeat;
@@ -111,6 +119,38 @@ body {
 .hero_image-render{
   margin-inline: auto;
 }
+
+// -------- Section Foodtruck -------- //
+.section-foodtruck{
+  display:flex;
+  flex-direction: column-reverse;
+  margin-top:functions.space(30);
+  margin-bottom:functions.space(30);
+
+  .section-foodtruck_image{
+    position:relative;
+    border-left: 4px solid colors.$secondary;
+    padding: 0.5rem;
+    margin-bottom: functions.space(10);
+    &::after,
+    &::before{
+      content:'';
+      position: absolute;
+      left:0px;
+      width: 50%;
+      height: 4px;
+      background-color: colors.$secondary;
+    }
+    &::before{
+      top:0;
+    }
+    &::after{
+      bottom:0;
+    }
+
+  }
+}
+
 // -------- Media Queries -------- //
 @media (min-width: 640px) {
   .container {
@@ -118,6 +158,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  main {
+    padding: 0;
+  }
   .container {
     max-width: 768px;
   }
@@ -129,10 +172,9 @@ body {
   }
   .section-hero::after {
     bottom: -240px;
-    right: 80px;
+    right: functions.space(10);
     width: 280px;
     height: 280px;
-  
   }
 }
 @media (min-width: 1024px) {
@@ -175,6 +217,16 @@ body {
     flex-direction: row;
     align-items: center;
   }
+  .section-foodtruck {
+    flex-direction: row-reverse;
+    .section-foodtruck_content,
+    .section-foodtruck_image {
+      max-width: 50%;
+    }
+    .section-foodtruck_content{
+      padding-left: functions.space(5);
+    }
+  }  
 }
 @media (min-width: 1280px) {
   .container {
