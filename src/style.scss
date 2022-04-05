@@ -22,6 +22,9 @@ h6{
   font-family: contentSemiBold;
   padding-bottom: 1rem;
 }
+p{
+  font-size:0.875rem;
+}
 .container {
   width: 100%;
   margin-inline: auto;
@@ -181,18 +184,57 @@ footer {
     border-radius: 8px;
   }
 }
-// -------- Media Queries -------- //
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+.menus_extras-lead{
+  font-family: contentSemiBold;
+}
+.menus_extras-list{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:functions.space(5) functions.space(0.5);
+  margin: functions.space(5) 0;
+}
+.list_item-legend{
+  padding-top: functions.space(1);
+  font-size: 0.75rem;
+}
+.menus_productor{
+  position:relative;
+  margin-top: functions.space(30);
+  padding: functions.space(18) functions.space(4) functions.space(9) functions.space(4);
+  background-color: colors.$grey;
+
+  &::after{
+    content:'';
+    position: absolute;
+    top:-110px;
+    left:calc(50% - 110px);
+    width: 220px;
+    height: 220px;
+    background:transparent url(./assets/images/productor_local_logo.png) center center no-repeat;
+    background-size: contain;
   }
 }
-@media (min-width: 768px) {
-  main {
-    padding: 0;
+.menus_productor-list{
+  padding-top: functions.space(4);
+}
+.productor_list-item {
+  p{
+   font-family: contentSemiBold;
+   font-size:0.75rem;
   }
-  .container {
-    max-width: 768px;
+  &:not(:last-child){
+    padding-bottom: functions.space(1);
+  }
+}
+// -------- Utils ---------- //
+.secondary{
+  color: colors.$secondary;
+}
+
+// -------- Media Queries -------- //
+@media (min-width: 640px) {
+   .container {
+    max-width: 640px;
   }
   .section-hero_title{
     font-size: 2.5rem;
@@ -212,7 +254,7 @@ footer {
     max-width: 1024px;
   }
   .navbar-menu_item{
-    margin-right: 160px;
+    margin-right: functions.space(20);
   }
   .navbar-burger{
     display:none;
@@ -256,7 +298,39 @@ footer {
     .section-foodtruck_content{
       padding-left: functions.space(5);
     }
-  }  
+  }
+  .menu_list-item{
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:nth-of-type(2){
+      text-align: right;
+      margin: 5rem 0;
+      flex-direction: row-reverse;
+    }
+  }
+  .list_item-description{
+    max-width: 50%;
+    margin: 0;
+    padding-right: 1.5rem ;
+  }
+  .menus_extras-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 functions.space(1);
+  }
+  .list_item-legend {
+   font-size: 0.875rem;
+  }
+  .menus_productor-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .productor_list-item{
+      flex:1 0 50%;
+    }
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -279,6 +353,14 @@ footer {
     .hero_title-subtitle {
       font-size: 5.5rem;
     }
+  }
+  .list_item-description {
+     padding-right: 0;
+  }
+  .menus_productor {
+      margin-top: functions.space(30);
+      padding-left: functions.space(10);
+      padding-right: functions.space(10);
   }
 }
 
