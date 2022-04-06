@@ -2,7 +2,7 @@
 @use './assets/styles/colors';
 @use './assets/styles/functions';
 @use './assets/styles/typography';
-
+// -------- Global -------- //
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +25,19 @@ p {
 .container {
   width: 90%;
   margin-inline: auto;
+}
+.section-foodtruck,
+.section-menus,
+.section-photos,
+.section-contact,
+.footer {
+  margin-top: functions.space(30);
+}
+.display-none {
+  display: none;
+}
+.secondary {
+  color: colors.$secondary;
 }
 // -------- Navbar -------- //
 .navbar {
@@ -82,13 +95,6 @@ p {
 .menu_item-link {
   font-family: contentRegular, sans-serif;
   color: colors.$dark;
-}
-// -------- General section -------- //
-.section-foodtruck,
-.section-menus,
-.section-photos,
-.section-contact {
-  margin-top: functions.space(30);
 }
 // -------- Section Hero -------- //
 .section-hero {
@@ -250,7 +256,6 @@ p {
     font-family: titleBold;
   }
 }
-
 // -------- Section Contact -------- //
 .contact_planning-grid {
   display: grid;
@@ -347,12 +352,17 @@ p {
     background-image: url(./assets/images/instagram.svg);
   }
 }
-// -------- Utils ---------- //
-.display-none {
-  display: none;
-}
-.secondary {
-  color: colors.$secondary;
+// -------- Footer -------- //
+.footer {
+  padding: functions.space(4) 0;
+  text-align: center;
+  .footer_copyright_author {
+    color: colors.$dark;
+    font-family: contentSemiBold;
+    &:hover {
+      color: lighten(colors.$dark, 20%);
+    }
+  }
 }
 // -------- Media Queries -------- //
 @media (min-width: 640px) {
