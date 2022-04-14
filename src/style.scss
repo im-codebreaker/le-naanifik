@@ -163,8 +163,12 @@ p {
     display: block;
     text-align: right;
     margin-top: functions.space(3);
-    font-family: contentLightItalic;
     color: colors.$secondary;
+    .arrow {
+      display: inline-block;
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
   }
 }
 .menu_list-item {
@@ -452,6 +456,19 @@ p {
       padding-left: functions.space(5);
     }
   }
+  .menus_introduction-link {
+    font-size: 0.8rem;
+    .arrow {
+      transition: transform 800ms ease-in-out;
+    }
+    &:hover {
+      color: colors.$secondary-variant;
+      .arrow {
+        transform: translate3d(1rem, 0, 0);
+        transition: transform 800ms ease-in-out;
+      }
+    }
+  }
   .menu_list-item {
     flex-direction: row;
     justify-content: space-between;
@@ -490,6 +507,13 @@ p {
   .contact_planning-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2px;
+  }
+  .infos_contact-item {
+    transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+    &:hover {
+      transform: scale(0.95);
+      transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
   }
 }
 @media (min-width: 1280px) {
