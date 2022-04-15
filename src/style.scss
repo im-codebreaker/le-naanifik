@@ -113,16 +113,17 @@ p {
     background: transparent url(./assets/images/naanifik_circle.svg) center
       center no-repeat;
     animation: smoothRotate 10s ease infinite;
+    border-radius: 50%;
   }
   .section-hero_title {
     text-align: right;
-    font-family: titleBold;
+    font-family: naanifik, cursive;
     font-size: 1.5rem;
     line-height: 1;
-    color: colors.$secondary;
+    color: colors.$primary;
     .hero_title-subtitle {
       display: block;
-      color: colors.$primary;
+      color: colors.$secondary;
       font-size: 2rem;
     }
   }
