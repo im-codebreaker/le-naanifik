@@ -21,7 +21,6 @@ h4,
 h5,
 h6 {
   font-family: contentSemiBold;
-  padding-bottom: 1rem;
 }
 p {
   font-size: 0.875rem;
@@ -37,6 +36,17 @@ p {
 .footer {
   scroll-margin-top: functions.space(8);
   margin-top: functions.space(30);
+}
+.section-foodtruck_title,
+.section-menus_title,
+.section-photos_title,
+.section-contact_title {
+  color: colors.$grey;
+  font-size: 3rem;
+}
+.section-foodtruck_title,
+.section-photos_title {
+  text-align: right;
 }
 .display-none {
   display: none;
@@ -133,8 +143,6 @@ p {
 // -------- Section Foodtruck -------- //
 .section-foodtruck {
   position: relative;
-  display: flex;
-  flex-direction: column-reverse;
   &::after {
     content: '';
     position: absolute;
@@ -148,11 +156,16 @@ p {
     animation: smoothRotate 20s linear infinite;
     border-radius: 50%;
   }
+  .section-foodtruck_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: functions.space(8);
+  }
   .section-foodtruck_image {
     position: relative;
     border-left: 4px solid colors.$secondary;
     padding: 0.5rem;
-    margin-bottom: functions.space(10);
+    margin-bottom: functions.space(4);
     &::after,
     &::before {
       content: '';
@@ -177,10 +190,11 @@ p {
 }
 .section-menus_introduction {
   max-width: 660px;
+  margin-top: functions.space(8);
   .menus_introduction-link {
     display: block;
     text-align: right;
-    margin-top: functions.space(3);
+    margin-top: functions.space(2);
     color: colors.$secondary;
     .arrow {
       display: inline-block;
@@ -192,9 +206,13 @@ p {
 .menu_list-item {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: functions.space(8);
 }
 .list_item-description {
-  margin: functions.space(5) 0;
+  margin-top: functions.space(4);
+  h3 {
+    padding-bottom: functions.space(2);
+  }
 }
 .list_item-imagebox {
   border: 4px solid colors.$grey;
@@ -204,14 +222,16 @@ p {
     border-radius: 8px;
   }
 }
-.menus_extras-lead {
+.menus_extras-lead,
+.list_item-legend {
   font-family: contentSemiBold;
+  color: colors.$primary-variant;
 }
 .menus_extras-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: functions.space(5) functions.space(0.5);
-  margin: functions.space(5) 0;
+  margin-top: functions.space(16);
 }
 .list_item-legend {
   padding-top: functions.space(1);
@@ -251,6 +271,7 @@ p {
 .section-photos_grid {
   display: grid;
   row-gap: 10px;
+  margin-top: functions.space(8);
 }
 .photos_grid-item {
   img,
@@ -283,6 +304,7 @@ p {
 .contact_planning-grid {
   display: grid;
   row-gap: 13px;
+  margin-top: functions.space(8);
   .planning_grid-item {
     display: flex;
     flex-direction: column;
@@ -296,11 +318,11 @@ p {
       background-color: colors.$secondary-variant;
     }
     .grid_item-day {
-      font-size: 3rem;
+      font-size: 2rem;
       text-align: right;
     }
     .grid_item-hour {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -435,7 +457,7 @@ p {
 }
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 960px;
   }
   // -------- Navbar -------- //
   .navbar {
@@ -483,8 +505,10 @@ p {
       width: 280px;
       height: 280px;
     }
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    .section-foodtruck_wrapper {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
     .section-foodtruck_content,
     .section-foodtruck_image {
       max-width: 50%;
@@ -603,6 +627,14 @@ p {
     padding-left: functions.space(10);
     padding-right: functions.space(10);
   }
+  .contact_planning-grid {
+    .planning_grid-item {
+      .grid_item-day {
+        font-size: 3rem;
+      }
+    }
+  }
+
   .section_contact-infos {
     display: grid;
     grid-template-columns: 1fr 1fr;
