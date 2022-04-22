@@ -87,7 +87,7 @@
             les falacheeses, les tenders ou encore la viande de boeuf locale.</p
           >
         </div>
-        <figure class="section-foodtruck_image">
+        <figure class="section-foodtruck_image target">
           <picture>
             <source
               srcset="
@@ -105,6 +105,7 @@
               src="https://le-naanifik.s3.eu-west-3.amazonaws.com/foodtruck.jpg"
               width="640"
               height="320"
+              loading="lazy"
               alt="Le foodtruck Naanifik"
             />
           </picture>
@@ -144,7 +145,7 @@
                   renfermer un coeur de cheddar fondant.</p
                 >
               </div>
-              <figure>
+              <figure class="target">
                 <picture class="list_item-imagebox">
                   <source
                     srcset="
@@ -162,6 +163,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/falafel.jpg"
                     width="640"
                     height="320"
+                    loading="lazy"
                     alt="Photo d'un cheese-naan falafel vu de dessus"
                     class="item_imagebox-img"
                   />
@@ -177,7 +179,7 @@
                   de morceaux de filet de poulets marinés et panés.
                 </p>
               </div>
-              <figure>
+              <figure class="target">
                 <picture class="list_item-imagebox">
                   <source
                     srcset="
@@ -195,6 +197,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/tenders.jpg"
                     width="640"
                     height="320"
+                    loading="lazy"
                     alt="Photo d'un cheese-naan tenders vu de côté"
                     class="item_imagebox-img"
                   />
@@ -210,7 +213,7 @@
                   et Provençale au parfum de thym et d’ail.</p
                 >
               </div>
-              <figure>
+              <figure class="target">
                 <picture class="list_item-imagebox">
                   <source
                     srcset="
@@ -228,6 +231,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/boeuf.jpg"
                     width="640"
                     height="320"
+                    loading="lazy"
                     alt="Photo d'un cheese-naan au boeuf emincé posé sur un plan de travail"
                     class="item_imagebox-img"
                   />
@@ -261,6 +265,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/onions-bacon.jpg"
                     width="380"
                     height="240"
+                    loading="lazy"
                     alt="Photo d'un mélange bacon oignon fris vue de dessus"
                   />
                 </picture>
@@ -288,6 +293,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/pickles.jpg"
                     width="380"
                     height="240"
+                    loading="lazy"
                     alt="Photos de pickles de courgettes carottes baignant dans leur jus"
                   />
                 </picture>
@@ -315,6 +321,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/sauces.jpg"
                     width="380"
                     height="240"
+                    loading="lazy"
                     alt="Photos de trois pots de sauces fait maison"
                   />
                 </picture>
@@ -340,6 +347,7 @@
                     src="https://le-naanifik.s3.eu-west-3.amazonaws.com/shortbread-millionaire.jpg"
                     width="380"
                     height="240"
+                    loading="lazy"
                     alt="Photos d'un shortbread-millionaire posé sur son emballage en papier"
                   />
                 </picture>
@@ -427,6 +435,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-naan-tenders.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photos d'un sandwich tenders salade et tomates"
               />
             </picture>
@@ -459,6 +468,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-frites-square.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photo d'un cornet de frite maison" /></picture
           ></li>
           <li class="photos_grid-item"
@@ -489,6 +499,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-naan-tenders-square.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photo d'un tas de pain naan" /></picture
           ></li>
           <li class="photos_grid-item">
@@ -509,6 +520,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-falacheese.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photo d'un trio de falacheese posés sur leur emballage"
               /> </picture
           ></li>
@@ -530,6 +542,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-naan-boeuf.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photo d'un sandwich naan boeuf"
               />
             </picture>
@@ -552,6 +565,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-naan-square.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photo d'un tas de pain naan"
               />
             </picture>
@@ -574,6 +588,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-jus.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Trois bouteilles de jus de fruits artisanales"
               />
             </picture>
@@ -605,6 +620,7 @@
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/grid-tenders.jpg"
                 width="640"
                 height="640"
+                loading="lazy"
                 alt="Photos d'un duo de tenders avec un pot de sauce blanche maison"
               />
             </picture>
@@ -679,8 +695,13 @@
     <footer class="footer">
       <p class="footer_copyright">
         © Le Naanifik - Website designed by
-        <a href="/" class="footer_copyright_author">Code Breaker</a></p
+        <a href="/" class="footer_copyright-author">Code Breaker</a></p
       >
+      <div class="footer_backtop">
+        <a href="#" class="footer_backtop-link" aria-label="Revenir en haut"
+          ><span class="display-none">Revenir en haut</span>↑</a
+        >
+      </div>
     </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
