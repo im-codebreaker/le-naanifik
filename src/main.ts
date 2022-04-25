@@ -16,8 +16,9 @@ const options: ObserverOptions = {
   threshold: 0
 }
 
-let observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry: any) => {
+
+let observer = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
+  entries.forEach((entry: IntersectionObserverEntry) => {
     if (entry.isIntersecting) {
       if (!entry.target.classList.contains('active')) {
         entry.target.classList.add('active');
@@ -27,12 +28,12 @@ let observer = new IntersectionObserver((entries) => {
   })
 }, options);
 
-let targets = document.querySelectorAll('.target');
+let targets: NodeListOf<HTMLElement> | null = document.querySelectorAll('.target');
 
-targets.forEach((target) => { observer.observe(target) })
+targets.forEach((target: HTMLElement) => { observer.observe(target) })
 
 
-Array(planningItems)[0].forEach((item) => {
+planningItems.forEach((item: HTMLElement): void => {
   if (date.getDay().toString() === item.dataset?.date) {
     item.classList.add('active')
   } else {
