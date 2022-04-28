@@ -46,3 +46,4 @@ buttonBurger?.addEventListener('click', () => {
   buttonBurger.classList.toggle('open');
 })
 
+console.log('Hello')

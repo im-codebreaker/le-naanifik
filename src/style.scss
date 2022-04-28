@@ -137,7 +137,8 @@ p {
   }
   .hero_image-render {
     margin-inline: auto;
-    animation: smoothPop 500ms linear;
+    animation: smoothPop 500ms linear,
+      smoothFloat 10000ms linear 1500ms infinite;
   }
 }
 // -------- Section Foodtruck -------- //
@@ -670,5 +671,16 @@ p {
   100% {
     transform: none;
     opacity: 1;
+  }
+}
+@keyframes smoothFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
