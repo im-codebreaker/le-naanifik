@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #COLOR SCHEME
+\*------------------------------------*/
+
+$primary: hsl(217, 22%, 33%);
+$primary-variant: hsl(218, 22%, 44%);
+$secondary: hsl(26, 91%, 56%);
+$secondary-variant: hsl(26, 91%, 64%);
+$light: hsl(0, 0%, 98%);
+$dark: hsl(218, 22%, 20%);
+$dark-lighten: hsl(219, 22%, 28%);
+$grey: hsl(218, 22%, 90%);
+$grey-lighten: hsl(240, 20%, 98%);
+
+/*------------------------------------*\
+  #TIMING FUNCTIONS
+\*------------------------------------*/
+
+$easing-smooth: cubic-bezier(0.55, 0.055, 0.675, 0.19);

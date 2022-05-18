@@ -1,4 +1,4 @@
-import './style.scss'
+import './main.scss';
 
 interface ObserverOptions {
   root: null,
@@ -8,7 +8,7 @@ interface ObserverOptions {
 
 const date: Date = new Date();
 const planningItems: NodeListOf<HTMLElement> | null = document.querySelectorAll('.planning_grid-item');
-const buttonBurger: HTMLButtonElement | null = document.querySelector('.navbar-burger');
+const buttonBurger: HTMLButtonElement | null = document.querySelector('.navbar_burger');
 
 const options: ObserverOptions = {
   root: null,
