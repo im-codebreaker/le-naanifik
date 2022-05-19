@@ -32,6 +32,7 @@
   justify-content: space-between;
   padding: functions.space(3);
 }
+
 .navbar_menu {
   position: absolute;
   top: -400px;
@@ -51,6 +52,10 @@
     transform: translate3d(0, 0, 0);
     transition: none;
   }
+}
+.navbar_logo,
+.navbar_burger {
+  z-index: 2;
 }
 .navbar_burger {
   cursor: pointer;
