@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Naanifik - Street Food</title>
     <meta
       name="description"
@@ -16,21 +17,25 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="canonical" href="https://www.lenaanifik.fr/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Le Naanifik" />
+    <meta property="og:title" content="Le Naanifik Street Food" />
+    <meta
+      property="og:description"
+      content="Le Naanifik c'est le foodtruck innovant des Alpes-de-Haute-Provence"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lenaanifik.fr" />
+    <meta
+      property="og:image"
+      content="https://le-naanifik.s3.eu-west-3.amazonaws.com/og_naanifik.jpg"
+    />
   </head>
 
   <body>
     <header>
       <nav class="navbar">
         <img
-          src="/medias/naanifik_logo.svg"
+          src="https://le-naanifik.s3.eu-west-3.amazonaws.com/naanifik_logo.svg"
           width="40"
           height="40"
           alt="Logo LeNaanifik"
@@ -65,11 +70,27 @@
           </h1>
         </div>
         <figure class="section_hero-image">
-          <img
-            src="/medias/naan-3d.png"
-            alt="Cheese naan 3D"
-            class="hero_image-render"
-          />
+          <picture>
+            <source
+              srcset="
+                https://le-naanifik.s3.eu-west-3.amazonaws.com/naan-3d.webp
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                https://le-naanifik.s3.eu-west-3.amazonaws.com/naan-3d.png
+              "
+              type="image/png"
+            />
+            <img
+              src="https://le-naanifik.s3.eu-west-3.amazonaws.com/naan-3d.png"
+              width="640"
+              height="640"
+              alt="Cheese naan 3D"
+              class="hero_image-render"
+            />
+          </picture>
         </figure>
       </section>
       <section id="foodtruck" class="section_foodtruck container">
@@ -81,17 +102,28 @@
             >
             <p
               >Le Naanifik vous propose de prendre part à un voyage autour du
-              monde. Découvrez une cuisine originale basée sur une création de
-              cheesenaan au cheddar, ce pain indien à la fois gourmand et
-              réconfortant.<br />Les pains, sauces, frites et accompagnements
-              qui vous sont proposés sont fait maison et sur place afin de vous
-              garantir une excellente dégustation.<br />
+              monde et de découvrir une cuisine originale basée sur une création
+              de cheesenaan au cheddar, ce pain indien à la fois gourmand et
+              réconfortant.<br />
+              Les pains, sauces, frites et accompagnements qui vous sont
+              proposés sont tous fait maison et sur place afin de vous garantir
+              une excellente dégustation.<br />
               Le Naanifik met un point d'honneur à choisir un maximum de
-              produits locaux et bio comme :<br />
-              - la farine bio de Malijai<br />
-              - les Pois chiches bio de Thoard<br />
-              - la viande de Boeuf de St Jeannet <br />- etc, ...<br /><br />
-              <br />
+              produits locaux et bio comme :</p
+            >
+            <ul class="foodtruck_content-list">
+              <li class="content_list-item">
+                <span class="secondary">▸</span> la farine bio de Malijai
+              </li>
+              <li class="content_list-item"
+                ><span class="secondary">▸</span> les Pois chiches bio de Thoard
+              </li>
+              <li class="content_list-item"
+                ><span class="secondary">▸</span> la viande de Boeuf de St
+                Jeannet
+              </li>
+            </ul>
+            <p>
               Venez découvrir de la street food faites pour vous et avec une
               identité bien marquée.
             </p>
@@ -112,6 +144,7 @@
               />
               <img
                 src="https://le-naanifik.s3.eu-west-3.amazonaws.com/foodtruck.jpg"
+                class="foodtruck-image"
                 width="640"
                 height="320"
                 loading="lazy"
@@ -125,10 +158,16 @@
         <h2 class="section_sandwichs-title">Sandwichs</h2>
         <div class="section_sandwichs-introduction">
           <p
-            >Ici tout est fait maison.<br />
-            Faites votre choix dans ce panel de sandwichs pour régaler vos
-            papilles.<br />
-            Petits et grands devraient trouver leur bonheur.
+            >Au Naanifik tout est fait maison.
+            <a
+              href="https://le-naanifik.s3.eu-west-3.amazonaws.com/allergenes.jpg"
+              target="_blank"
+              rel="noreferrer"
+              class="secondary"
+              >(consulter la liste des allergènes)</a
+            ><br />
+            Faites votre choix dans ce panel de sandwichs où petits comme grands
+            devraient trouver leur bonheur.
           </p>
           <a
             href="https://www.facebook.com/LeNaanifik/photos/a.2179604575455573/4912409925508344"
@@ -142,7 +181,10 @@
           <ul class="sandwichs_menu-list">
             <li class="menu_list-item">
               <div class="list_item-description">
-                <h3> Le Falafel | Le Falacheese</h3>
+                <h3>
+                  Le Falafel | Le Falacheese
+                  <span class="secondary">*</span></h3
+                >
                 <p
                   >Bien connu au Liban, en Israël ou encore en Egypte cette
                   spécialité est une boulette de pois chiche frite parfumée à la
@@ -154,7 +196,12 @@
                   signature du Naanifik, il n’y a qu’ici que vous pourrez en
                   déguster. Le principe est de dévorer des Falafels au coeurs
                   fondant de fromage.
-                </p>
+                  <span class="item_description-asterix">
+                    * Le falacheese et le falacheese sont exclusivement
+                    disponible hors période estivale et uniquement sur
+                    Digne-les-Bains
+                  </span></p
+                >
               </div>
               <figure class="target">
                 <picture class="list_item-imagebox">
@@ -429,7 +476,7 @@
         <ul class="section_photos-grid">
           <li class="photos_grid-item blockquote">
             <figure class="grid_item-review">
-              <blockquote>
+              <blockquote class="item_review-blockquote">
                 Un concept délicieux!! Tout les ingrédients sont frais, les
                 sauces, naans et autres condiments sont tous fait maison. Me
                 service rapide et le patron fort sympathique. Un arret
@@ -629,7 +676,7 @@
           </li>
           <li class="photos_grid-item blockquote">
             <figure class="grid_item-review">
-              <blockquote>
+              <blockquote class="item_review-blockquote">
                 Un food truck inspiré d'originalité, bon et qui cale !un goût de
                 r'vient-zy!
               </blockquote>
@@ -693,6 +740,7 @@
           </div>
           <div class="section_infos-map">
             <iframe
+              title="Localisation du Naanifik sur une carte Google map"
               class="infos_map-render"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11465.632678106242!2d6.1878928!3d44.0749282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x521ca7b0c0f1eb98!2sLe%20Naanifik%20Food-truck!5e0!3m2!1sfr!2sfr!4v1649233984919!5m2!1sfr!2sfr"
               style="border: 0"
@@ -737,7 +785,9 @@
     <footer class="footer">
       <p class="footer_copyright">
         © Le Naanifik - Website designed by
-        <a href="/" class="footer_copyright-author">Code Breaker</a>
+        <a href="https://www.codebreaker.fr" class="footer_copyright-author"
+          >Code Breaker</a
+        >
       </p>
       <div class="footer_backtop">
         <a href="#" class="footer_backtop-link" aria-label="Revenir en haut"

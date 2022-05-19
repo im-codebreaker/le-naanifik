@@ -234,19 +234,21 @@ p {
     right: 40px;
     width: 180px;
     height: 180px;
-    background: transparent url(./assets/images/naanifik_circle.svg) center
-      center no-repeat;
+    background: transparent
+      url(https://le-naanifik.s3.eu-west-3.amazonaws.com/naanifik_circle.svg)
+      center center no-repeat;
     border-radius: 50%;
     -webkit-animation: smoothRotate 20s linear infinite;
     animation: smoothRotate 20s linear infinite;
 
     @media screen and (min-width: 64em) {
+      bottom: -320px;
       width: 280px;
       height: 280px;
     }
 
     @media screen and (min-width: 90em) {
-      bottom: -320px;
+      bottom: -420px;
       width: 380px;
       height: 380px;
     }
@@ -257,7 +259,8 @@ p {
   flex-direction: column-reverse;
   margin-top: functions.space(8);
 
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 90em) {
+    gap: 20px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -268,10 +271,17 @@ p {
     flex: 1;
   }
 }
+.foodtruck-image {
+  width: 100%;
+}
 .section_foodtruck-content p {
+  padding-top: 1rem;
   text-align: justify;
 }
-
+.foodtruck_content-subtitle,
+.foodtruck_content-list {
+  font-size: 0.875rem;
+}
 .section_foodtruck-image {
   position: relative;
   border-left: 4px solid variables.$secondary;
@@ -282,7 +292,7 @@ p {
   &::before {
     content: '';
     position: absolute;
-    left: 0px;
+    left: -1px;
     width: 50%;
     height: 4px;
     background-color: variables.$secondary;
@@ -374,11 +384,18 @@ p {
 .list_item-description h3 {
   padding-bottom: functions.space(2);
 }
+.item_description-asterix {
+  display: block;
+  padding-top: 1rem;
+  font-style: italic;
+  color: variables.$secondary;
+}
 .list_item-imagebox {
   border: 4px solid variables.$grey;
   border-radius: 8px;
 }
 .item_imagebox-img {
+  width: 100%;
   padding: 4px;
   border-radius: 8px;
 }
@@ -419,8 +436,9 @@ p {
     left: calc(50% - 110px);
     width: 220px;
     height: 220px;
-    background: transparent url(./assets/images/productor_local_logo.png) center
-      center no-repeat;
+    background: transparent
+      url(https://le-naanifik.s3.eu-west-3.amazonaws.com/productor_local_logo.png)
+      center center no-repeat;
     background-size: contain;
   }
 
@@ -492,13 +510,24 @@ p {
   object-fit: cover;
 }
 .blockquote {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: functions.space(10) functions.space(5);
   text-align: justify;
   color: variables.$light;
-  background: variables.$primary-variant;
+  background: variables.$primary;
+
+  &::before {
+    content: '“';
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    opacity: 0.2;
+    font-size: 20rem;
+    font-family: naanifik, cursive;
+  }
 
   @media screen and (min-width: 40em) {
     padding: 0 functions.space(3);
@@ -513,6 +542,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.item_review-blockquote {
+  font-size: 0.75rem;
+  @media screen and (min-width: 64em) {
+    font-size: 0.875rem;
+  }
 }
 .author {
   padding-top: functions.space(3);
@@ -649,16 +684,16 @@ p {
   background: transparent center center no-repeat;
   background-size: contain;
   &.phone {
-    background-image: url(./assets/images/phone.svg);
+    background-image: url(https://le-naanifik.s3.eu-west-3.amazonaws.com/phone.svg);
   }
   &.mail {
-    background-image: url(./assets/images/mail.svg);
+    background-image: url(https://le-naanifik.s3.eu-west-3.amazonaws.com/mail.svg);
   }
   &.facebook {
-    background-image: url(./assets/images/facebook.svg);
+    background-image: url(https://le-naanifik.s3.eu-west-3.amazonaws.com/facebook.svg);
   }
   &.instagram {
-    background-image: url(./assets/images/instagram.svg);
+    background-image: url(https://le-naanifik.s3.eu-west-3.amazonaws.com/instagram.svg);
   }
 }
 
