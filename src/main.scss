@@ -328,10 +328,9 @@ p {
   text-align: right;
   margin-top: functions.space(2);
   color: variables.$secondary;
+  font-size: 0.8rem;
 
   @media screen and (min-width: 64em) {
-    font-size: 0.8rem;
-
     &:hover {
       color: variables.$secondary-variant;
       .arrow {
