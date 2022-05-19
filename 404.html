@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="fr" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -15,7 +16,6 @@
     <meta name="author" content="Code Breaker" />
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="favicon.png" />
-    <meta name="robots" content="noindex, follow" />
     <meta property="og:site_name" content="Le Naanifik" />
     <meta
       property="og:title"
@@ -26,6 +26,7 @@
       content="Le Naanifik c'est le foodtruck innovant des Alpes-de-Haute-Provence"
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lenaanifik.fr" />
     <meta
       property="og:image"
       content="https://le-naanifik.s3.eu-west-3.amazonaws.com/og_naanifik.jpg"
@@ -35,5 +36,62 @@
       content="Bannière avec le logo du Naanifik Street Food"
     />
   </head>
-  <body> </body>
+  <body>
+    <section class="section_notfound container">
+      <div class="section_notfound-content">
+        <h1>Page introuvable !</h1>
+        <p
+          >La page ou la ressource que vous êtes train de chercher a été
+          modifiée ou n’existe pas.<br />
+          Rendez vous à l’accueil du site.</p
+        >
+        <a href="/" class="notfound_content-link">Retourner à l'accueil</a>
+      </div>
+      <div class="section_notfound-images">
+        <picture>
+          <source
+            srcset="
+              https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_blue.webp
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_blue.png
+            "
+            type="image/png"
+          />
+          <img
+            class="notfound_images-blue"
+            src="https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_blue.png"
+            alt="forme abstraite inspirée du logo du naanifik en 3d"
+            width="160"
+            height="160"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_orange.webp
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_orange.png
+            "
+            type="image/png"
+          />
+          <img
+            class="notfound_images-orange"
+            src="https://le-naanifik.s3.eu-west-3.amazonaws.com/abstract_orange.png"
+            alt="forme abstraite inspirée du logo du naanifik en 3d"
+            width="320"
+            height="320"
+          />
+        </picture>
+      </div>
+    </section>
+    <script type="module" src="/src/notFound.ts"></script>
+  </body>
 </html>

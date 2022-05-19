@@ -1,4 +1,5 @@
 import './main.scss';
+import './index.scss';
 
 interface ObserverOptions {
   root: null,
@@ -45,5 +46,3 @@ planningItems.forEach((item: HTMLElement): void => {
 buttonBurger?.addEventListener('click', () => {
   buttonBurger.classList.toggle('open');
 })
-
-console.log('Hello')

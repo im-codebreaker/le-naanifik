@@ -1,0 +1,54 @@
+/*------------------------------------*\
+  #USE FILES
+\*------------------------------------*/
+
+@use './assets/sass/utilities/functions';
+@use './assets/sass/utilities/variables';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section_notfound {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 64em) {
+    flex-direction: row-reverse;
+  }
+}
+.section_notfound-content {
+  margin-top: 2rem;
+}
+.section_notfound-images {
+  margin-inline: auto;
+}
+.section_notfound-content h1 {
+  font-family: titleBold;
+  font-size: clamp(2rem, 6vmin, 5.5rem);
+}
+.notfound_images-blue {
+  margin-left: auto;
+  max-width: 80px;
+
+  @media screen and (min-width: 64em) {
+    max-width: 160px;
+  }
+}
+.notfound_images-orange {
+  max-width: 160px;
+
+  @media screen and (min-width: 64em) {
+    max-width: 320px;
+  }
+}
+.notfound_content-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: variables.$secondary;
+}

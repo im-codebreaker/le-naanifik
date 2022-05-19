@@ -1,11 +1,13 @@
-/**
- * @type {import('vite').UserConfig}
- */
+const { resolve } = require('path');
+const { defineConfig } = require('vite');
 
-const config = {
+module.exports = defineConfig({
   build: {
-    cssCodeSplit: false,
+    rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        notFound: resolve(__dirname, '404.html'),
+      },
+    },
   },
-};
-
-export default config;
+});
