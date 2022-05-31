@@ -1,7 +1,7 @@
 @font-face {
   font-family: naanifik;
-  src: local('Comfortaa Bold'), local('Comfortaa-Bold');
-  src: url(/fonts/Comfortaa-Bold.woff2) format('woff2'),
+  src: local('Comfortaa Bold'), local('Comfortaa-Bold'),
+    url(/fonts/Comfortaa-Bold.woff2) format('woff2'),
     url(/fonts/Comfortaa-Bold.eot) format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
@@ -9,8 +9,8 @@
 }
 @font-face {
   font-family: titleRegular;
-  src: local('Advent Pro Regular'), local('AdventPro-Regular');
-  src: url(/fonts/AdventPro-Regular.woff2) format('woff2'),
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'),
+    url(/fonts/AdventPro-Regular.woff2) format('woff2'),
     url(/fonts/AdventPro-Regular.eot?#iefix) format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
@@ -18,8 +18,8 @@
 }
 @font-face {
   font-family: titleBold;
-  src: local('Advent Pro Bold'), local('AdventPro-Bold');
-  src: url(/fonts/AdventPro-Bold.woff2) format('woff2'),
+  src: local('Advent Pro Bold'), local('AdventPro-Bold'),
+    url(/fonts/AdventPro-Bold.woff2) format('woff2'),
     url(/fonts/AdventPro-Bold.eot?#iefix) format('embedded-opentype');
   font-weight: bold;
   font-style: normal;
@@ -27,8 +27,8 @@
 }
 @font-face {
   font-family: contentRegular;
-  src: local('Montserrat Regular'), local('Montserrat-Regular');
-  src: url(/fonts/Montserrat-Regular.woff2) format('woff2'),
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url(/fonts/Montserrat-Regular.woff2) format('woff2'),
     url(/fonts/Montserrat-Regular.eot?#iefix) format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
@@ -36,8 +36,8 @@
 }
 @font-face {
   font-family: contentSemiBold;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold');
-  src: url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
     url(/fonts/Montserrat-SemiBold.eot?iefix) format('embedded-opentype');
   font-weight: 600;
   font-style: normal;
