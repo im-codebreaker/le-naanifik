@@ -1,6 +1,6 @@
 # Le Naanifik - Street Food
 
-![vite](https://badgen.net/badge/vite/^2.8.0/purple?icon=terminal) ![ts](https://badgen.net/badge/typescript/^4.5.4/blue?icon=typescript) ![sass](https://badgen.net/badge/sass/^1.49.9/pink?icon=awesome)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ## About this repository
 
